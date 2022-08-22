@@ -32,9 +32,20 @@
   },
   "addons": [
   ],
-  "buildpacks": [{
-    "url": "heroku/python"
-  }],
+  "buildpacks": [
+    {
+      "url": "https://github.com/prxpostern/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/prxpostern/aria2-heroku"
+    },
+    {
+      "url": "https://github.com/prxpostern/heroku-buildpack-rarlab"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ],
   "formation": {
     "worker": {
       "quantity": 1,
